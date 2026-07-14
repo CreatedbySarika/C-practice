@@ -5,12 +5,15 @@ int main(){
     float gross_salary;
     float percent = 100;
 
+    /* keyboard input + saving the input the varibale address*/
     printf("Enter your Basic Salary ,dearness allowance and house rent Allowance :");
     scanf("%f %f %f",&basic_salary,&d_allowance,&hr_allowance);
 
+    /*converting the inputs to the percentage value*/
     d_allowance = d_allowance / percent;
     hr_allowance = hr_allowance / percent;
 
+    /*gross salary formula*/
     gross_salary = basic_salary+(d_allowance*basic_salary)+(hr_allowance*basic_salary);
 
     printf("%f",gross_salary);
