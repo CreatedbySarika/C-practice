@@ -29,4 +29,20 @@ int main(){
         
     printf("\n");
     }
+    /*pfirst for loop for printing from Ato G and Gto A*/
+
+    for(int s=65,e=71;s<=e;s++)
+    {
+        printf("%c ",s);
+        if (s==e)
+        
+        {
+            int m = e-1;
+            for(;m>=65;m--)
+            {
+                printf("%c ",m);
+            }
+        }
+        
+    }
 }
